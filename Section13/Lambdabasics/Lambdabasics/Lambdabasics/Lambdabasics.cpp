@@ -15,7 +15,7 @@ int main() {
 	std::cout << typeid(fn).name() << std::endl;
 	//Generic/polymorphic lambda
 	//							  <optional specifiers>
-	auto sum = [](auto x, auto y)/*mutable*/ /*noexcept*/(false){
+	auto sum = [](auto x, auto y)/*mutable*/ noexcept(false){
 		return x + y;			//	^^^^		^^^^
 	};
 	Unnamed<int> n;

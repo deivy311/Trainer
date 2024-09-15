@@ -1,4 +1,6 @@
 #include <iostream>
+#include <memory>  // Include this header
+
 class Printer {
 	std::weak_ptr<int> m_pValue{} ;
 public:

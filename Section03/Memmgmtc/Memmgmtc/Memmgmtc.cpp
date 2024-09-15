@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
+#include <cstring>
+
 void Malloc() {
 	//int *p = (int*)calloc(5, sizeof(int));
 	int *p = (int*)malloc(5 * sizeof(int));
@@ -31,7 +33,7 @@ void NewArrays() {
 }
 void Strings() {
 	char *p = new char[4];
-	strcpy_s(p, 4, "C++");
+	strcpy(p, "C++");
 	std::cout << p << std::endl;
 	delete[]p;
 }

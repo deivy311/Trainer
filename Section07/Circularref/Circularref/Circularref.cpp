@@ -1,4 +1,6 @@
 #include <iostream>
+#include <memory>  // Include this header to use std::shared_ptr and std::weak_ptr
+
 class Employee ;
 class Project {
 public:

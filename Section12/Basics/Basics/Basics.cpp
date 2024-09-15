@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstring>
+
 //Old Code
 //int Max(int x, int y) {
 //	return x > y ? x : y;
@@ -49,7 +51,7 @@ void Print() {
 }
 //Requires size as explicit argument
 template<typename T>
-T Sum(T*parr, int size){
+T Sum(T*arr, int size){
 	T sum{};
 	for (int i = 0; i < size; ++i) {
 		sum += arr[i];

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <cstring>
 struct Record {
 	int id;
 	char name[10];
@@ -18,7 +19,7 @@ Record GetRecord() {
 int main() {
 	Record r;
 	r.id = 1001;
-	strcpy_s(r.name,10, "Umar");
+	strcpy(r.name, "Umar");
 	WriteRecord(&r);
 
 	Record r2 = GetRecord();

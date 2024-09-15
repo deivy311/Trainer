@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <optional>
+#include <cstring>
 
 const char * GetErrorString(int errorNo) {
 	switch (errorNo) {
