@@ -3,6 +3,7 @@
 #include "Integer.h"
 #include <iostream>
 #include <vector>
+#include <list>
 #include <fstream>
 #include <filesystem>
 #include <set>

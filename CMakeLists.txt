@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 17) #setting C++ 14 standard
 # #finding pkg-config is a helper tool
 # find_package(PkgConfig REQUIRED)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
+# set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 
 add_subdirectory(Section02/Auto/Autokeyword/Autokeyword)
 add_subdirectory(Section02/Functionpointers/Functionpointer/Functionpointer)
@@ -80,7 +80,7 @@ add_subdirectory(Section15/Threadclass/Threadclass)
 add_subdirectory(Section15/Promisefuture/Promisefuture)
 add_subdirectory(Section16/Structuredbindings)
 add_subdirectory(Section16/Mandatorycopyelision)
-add_subdirectory(Section16/Constexprlambda)
+# add_subdirectory(Section16/Constexprlambda)
 add_subdirectory(Section16/Featuremacros)
 add_subdirectory(Section16/Evaluationorder)
 add_subdirectory(Section16/Attributes)

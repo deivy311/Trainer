@@ -5,7 +5,7 @@
             "name": "(gdb) Debug Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/bin/point_0", //Implemented new architecture
+            "program": "${workspaceFolder}/build/Section02/Auto/Autokeyword/Autokeyword/Autokeyword", //Implemented new architecture
             "args": [
                 "--d=16",
                 "--id=16",
@@ -14,7 +14,7 @@
                 "--v=/dev/video0"
             ],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/build/bin/",
+            "cwd": "${workspaceFolder}/build/",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",

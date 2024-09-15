@@ -1,4 +1,6 @@
 #include <iostream>
+#include <algorithm>  // Include this for std::partition
+#include <vector>           // Include this for std::vector
 #include <filesystem>
 namespace fs = std::filesystem ;
 void UsingPath() {

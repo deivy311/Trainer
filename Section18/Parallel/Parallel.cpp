@@ -4,6 +4,9 @@
 #include <string_view>
 #include <vector>
 #include <execution>
+//Install this:
+// sudo apt-get install libtbb-dev
+// and uncoment the cmakelist respective project Section18/Parallel
 class Timer {
 	std::chrono::steady_clock::time_point m_start ;
 public:

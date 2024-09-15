@@ -57,7 +57,9 @@ int main() {
 		auto p = std::make_shared<int>(5) ;
 		auto pt = std::make_shared<Point>(3,5) ;
 
-		auto pArr = std::make_shared<int[]>(5) ;
+		// auto pArr = std::make_shared<int[]>(5) ;
+		auto pArr = std::shared_ptr<int[]>(new int[5]);
+
 		pArr[0] = 0 ;
 	}
 	

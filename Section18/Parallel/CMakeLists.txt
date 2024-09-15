@@ -7,6 +7,7 @@ get_filename_component(SUB_PROJECT_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 message(STATUS "SUB_PROJECT_NAME: ${SUB_PROJECT_NAME}")
 #finding pkg-config is a helper tool
 find_package(PkgConfig REQUIRED)
+find_package(TBB REQUIRED)
 
 #including GStreamer header files directory
 include_directories(
@@ -42,4 +43,5 @@ target_include_directories(${SUB_PROJECT_NAME}
 )
 # #linking Gstreamer library with target executable
 target_link_libraries(${SUB_PROJECT_NAME} 
+        TBB::tbb
         )

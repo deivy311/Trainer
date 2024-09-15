@@ -1,6 +1,8 @@
 # cmake_minimum_required(VERSION 3.10)
 # set(SUB_PROJECT_NAME "Point_0")
 # Automatically set SUB_PROJECT_NAME to the current directory name
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 get_filename_component(SUB_PROJECT_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 
 # Print the project name for debugging purposes
