@@ -3,7 +3,7 @@
 int main() {
 	using namespace std;
 	//Referent
-	int x = 10;
+	int x = 2;
 	//Reference
 	int &ref = x;
 	int y = 20;
