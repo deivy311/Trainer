@@ -6,6 +6,6 @@ int main() {
 	cout << &x << "\n";
 	int *ptr = nullptr;
 	//cout << *ptr << "\n";
-	*ptr = 10 ;
+	// *ptr = 10 ;
 	return 0; 
 }
