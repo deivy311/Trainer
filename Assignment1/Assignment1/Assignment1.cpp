@@ -1,23 +1,28 @@
 #include <iostream>
 #include "math.h"
 
-int main() {
+int main()
+{
+    std::cout << "Assignment 1 Result: " << std::endl;
 
-    std::cout << "Assignment 2 Result: " << std::endl;
-
-    int x = 5, y = 10, result;
+    int x = 20;
+    int y = 10;
+    int result;
 
     // Call Add
-    Add(x, y, result);
+    Add(&x, &y);
+
+    // Call AddVal
+    AddVal(&x, &y, &result);
 
     // Call Swap
     std::cout << "Before Swap: x = " << x << ", y = " << y << std::endl;
-    Swap(x, y);
+    Swap(&x, &y);
     std::cout << "After Swap: x = " << x << ", y = " << y << std::endl;
 
     // Call Factorial
-    int num = 2;
-    Factorial(num, result);
+    int num = 4;
+    Factorial(&num, &result);
 
     return 0;
 }

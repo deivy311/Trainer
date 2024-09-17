@@ -98,6 +98,7 @@ add_subdirectory(Section18/Variant)
 add_subdirectory(Section18/Any)
 add_subdirectory(Section18/Optional)
 add_subdirectory(Section18/Parallel)
+add_subdirectory(Assignment1/Assignment1)
 add_subdirectory(Assignment2/Assignment2)
 
 # add_subdirectory(Section04/Class/Car/Carmain/)
