@@ -40,6 +40,8 @@ int main() {
 	
 	InternalFunction();
 	using namespace Sort::Comparision;
+	using namespace::Avg;
+	std::cout << Calculate(3.4f,6.7f) << std::endl;
 	Sort::Comparision::Less();
 	return 0;
 }
