@@ -29,6 +29,10 @@ void Process(Integer val) {
 
 int main() {
 	Integer a(3);
+
+	std::cout << a.GetValue() << std::endl;
+
+
 	/*auto b(std::move(a));
 	std::cout << a << std::endl;*/
 	Process(std::move(a));

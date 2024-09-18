@@ -58,8 +58,13 @@ int main() {
 		4,5,6
 	}; //1,2,3,4,5,6
 	   //data[0][1]
-	Strings();
 
+
+	//Malloc (); 
+	//New();
+	//NewArrays ();
+	//Strings ();
+	//TwoD ();
 
 
 	return 0;

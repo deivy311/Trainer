@@ -10,7 +10,7 @@ Integer::Integer(int value) {
 	m_pInt = new int(value);
 }
 
-Integer::Integer(const Integer & obj) {
+Integer::Integer(const Integer & obj) {  //deep copy
 	std::cout << "Integer(const Integer&)" << std::endl;
 	m_pInt = new int(*obj.m_pInt);
 }

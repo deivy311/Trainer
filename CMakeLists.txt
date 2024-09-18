@@ -9,6 +9,9 @@ set(CMAKE_CXX_STANDARD 17) #setting C++ 14 standard
 
 # set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
 
+add_subdirectory(Assigments/ASG1)
+# add_subdirectory(Assigments/ASG2)
+add_subdirectory(Assigments/ASG3)
 add_subdirectory(Section02/Auto/Autokeyword/Autokeyword)
 add_subdirectory(Section02/Functionpointers/Functionpointer/Functionpointer)
 add_subdirectory(Section02/Defaultfunctionargs/Defaultfunctionargs/Defaultfunctionargs)

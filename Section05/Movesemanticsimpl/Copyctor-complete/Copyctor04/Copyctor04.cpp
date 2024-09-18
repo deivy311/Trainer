@@ -1,6 +1,7 @@
 #include "Integer.h"
 #include <iostream>
 
+// will return L-Value
 Integer Add(const Integer &a, const Integer &b){
 	Integer temp ;
 	temp.SetValue(a.GetValue() + b.GetValue()) ;

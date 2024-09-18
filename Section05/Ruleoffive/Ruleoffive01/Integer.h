@@ -2,6 +2,7 @@
 #include <iostream>
 class Integer {
 	int *m_pInt;
+
 public:
 	//Default constructor
 	Integer();
@@ -9,13 +10,21 @@ public:
 	//Parameterized constructor
 	Integer(int value);
 
-	//Copy constructor
+
+	
+
+	//Copy constructor  (L-value reference)
 	Integer(const Integer &obj);
 
-	//Move constructor
+	//Move constructor (R-value)
 	Integer(Integer &&obj);
 
-	//Copy assignment
+
+
+/////////////// operators
+
+
+	//Copy assignment  
 	Integer & operator=(const Integer &obj) ;
 
 	//Move assignment
