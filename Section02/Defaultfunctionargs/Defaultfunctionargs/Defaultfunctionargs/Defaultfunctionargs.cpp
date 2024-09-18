@@ -15,6 +15,6 @@ int main() {
 	Not all arguments are necessary. If you specify arguments,
 	they should be specified from right to left.
 	*/
-	CreateWindow("Notepad", 100, 200);
+	CreateWindow("Notepad",100, 200);
 	return 0;
 }
