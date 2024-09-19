@@ -1,5 +1,5 @@
 #include <iostream>
-enum class Color : long{RED=5, GREEN, BLUE} ;
+enum class Color : long{RED=5, GREEN, BLUE} ;  // incremental by 1 so 5 - 6 - 7
 void FillColor(Color color) {
 	//Fill background with some color
 	if(color == Color::RED) {
@@ -15,12 +15,13 @@ void FillColor(Color color) {
 		std::cout << "BLUE" << std::endl; 
 	}
 }
-enum class TrafficLight : char{RED='c', GREEN, YELLOW} ;
+enum class TrafficLight : char{RED='c', GREEN, YELLOW} ; // c - d - e  (99-100-101  ASCII)
 int main() {
 	Color c = Color::RED ;
 	FillColor(c) ;
 	FillColor(Color::GREEN) ;
-	FillColor(static_cast<Color>(2)) ;
+	FillColor(static_cast<Color>(0)) ;
 	int x = static_cast<int>(Color::RED) ;
+	std::cout << "The value of x is: " << x << std::endl;
 	return 0;
 }

@@ -4,6 +4,7 @@
 class Bag {
 	int arr[10];
 	int m_Size{};
+
 public:
 	//Provides uniform initialization support for braced list of elements as arguments
 	Bag(std::initializer_list<int> values) {
@@ -19,7 +20,7 @@ public:
 		arr[m_Size++] = value;
 	}
 	void Remove() {
-		--m_Size;
+		--m_Size; // at the end
 	}
 	int operator [](int index) {
 		return arr[index];
@@ -28,6 +29,10 @@ public:
 		return m_Size;
 	}
 };
+
+
+//////////////////////////////////////////////////////
+
 void Print(std::initializer_list<int> values) {
 	//auto it = values.begin();
 	//while (it != values.end()) {
@@ -46,15 +51,15 @@ int main() {
 	//Braced list of elements automatically creates an initializer_list object
 	auto values = { 1,2,3,4 };
 
-	//Bag b{ 3,1,8 };
-	////b.Add(3);
-	////b.Add(1);
-	////b.Add(8);
-	//for (int i = 0; i < b.GetSize(); ++i) {
-	//	std::cout << b[i] << " "; 
-	//}
+	Bag b{ 3,1,8 };
+	//b.Add(3);
+	//b.Add(1);
+	//b.Add(8);
+	for (int i = 0; i < b.GetSize(); ++i) {
+		std::cout << b[i] << " "; 
+	}
 
-	//Print({ 8,2,6,7 });
+	Print({ 8,2,6,7 });
 	for (auto x : { 8,2,6,7 }) {
 		std::cout << x << " ";
 	}

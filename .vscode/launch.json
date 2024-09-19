@@ -6,7 +6,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/Assigments/ASG2/ASG2",
+            "program": "${workspaceFolder}/build/Section08/Section08",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -30,7 +30,7 @@
             "name": "(gdb) Debug Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program":"${workspaceFolder}/build/Assigments/ASG2/ASG2", //Implemented new architecture
+            "program":"${workspaceFolder}/build/Section08/Section08", //Implemented new architecture
             //"program": "${workspaceFolder}/build/Section02/Pointers/Pointers/Pointers/Pointers", //Implemented new architecture
             "args": [
                 "--d=16",

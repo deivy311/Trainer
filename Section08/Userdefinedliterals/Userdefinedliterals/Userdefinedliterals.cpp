@@ -12,15 +12,22 @@ public:
 		m_Kilometres = val;
 	}
 };
+/////////////////////////////////////////////
+
+
 Distance operator"" _mi(long double val) {
 	return Distance{ val * 1.6 };
 }
 Distance operator"" _metres(long double val) {
 	return Distance{ val / 1000 };
 }
+
+/////////////////////////////////////////////
 int main() {
 	Distance dist{ 32.0_mi };
 	Distance d2{ 7123.0_metres };
+	std::cout << dist.GetKm() << std::endl;
 	std::cout << d2.GetKm() << std::endl;
+
 	return 0;
 }

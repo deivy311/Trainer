@@ -92,7 +92,7 @@ union UDT {
 int main() {
 	using namespace std::string_literals ;
 	UDT udt ;
-	//new(&udt.s) std::string{"Hello world"} ;
+	new(&udt.s) std::string{"Hello world"} ;
 
 	new (&udt.a) A{} ;
 	udt.a.~A() ;
