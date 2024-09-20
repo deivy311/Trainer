@@ -101,7 +101,7 @@ add_subdirectory(Section18/Parallel)
 add_subdirectory(Assignment1/Assignment1)
 add_subdirectory(Assignment2/Assignment2)
 add_subdirectory(Assignment3/Assignment3)
-
+add_subdirectory(Assignment4/Assignment4)
 # add_subdirectory(Section04/Class/Car/Carmain/)
 # add_subdirectory(point_1)
 # add_subdirectory(point_2_3)
