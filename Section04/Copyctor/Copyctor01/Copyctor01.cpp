@@ -27,11 +27,25 @@ void Process(Integer val) {
 
 }
 
+
 int main() {
 	Integer a(3);
 	/*auto b(std::move(a));
 	std::cout << a << std::endl;*/
 	Process(std::move(a));
+	return 0;
+
+	Integer i(5);
+	Integer i2(i);
+	//shallow copy
+	i =i2;
+	int *p1 = new int(5);
+	// shallow copy
+	int *p2 = p1;
+	// Deep Copy
+    int *p3 = new int(*p1);
+
+	std::cout << i.GetValue() << std::endl;
 	return 0;
 }
 
