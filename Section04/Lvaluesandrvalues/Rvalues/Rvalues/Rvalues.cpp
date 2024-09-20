@@ -26,10 +26,16 @@ int main() {
 	
 	//ref is l-value reference
 	int &ref = x ;
+	std::cout << &ref << std::endl;
+
+
 	//Transform returns an l-value
 	int &ref2 = Transform(x) ;
+	std::cout << ref2 << std::endl;
+
 	//Binds to function that accepts l-value reference
 	Print(x);
+	
 	
 
 	//rv is r-value reference
