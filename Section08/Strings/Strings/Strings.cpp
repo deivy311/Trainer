@@ -28,29 +28,39 @@ int main() {
 	delete[] pFullName ;
 	*/
 
-	std::string first ;
-	std::string last ;
+	// std::string first ;
+	// std::string last ;
 
-	std::getline(std::cin, first) ;
-	std::getline(std::cin, last) ;
+	// std::getline(std::cin, first) ;
+	// std::getline(std::cin, last) ;
 
-	//std::string fullname = first + last ;
-	std::string fullname = Combine(first, last) ;
-	printf("%s", fullname.c_str()) ;
+	// //std::string fullname = first + last ;
+	// std::string fullname = Combine(first, last) ;
+	// printf("%s", fullname.c_str()) ;
 
-	//Insert into database
+	// //Insert into database
 
-	std::cout << fullname << std::endl; 
+	// std::cout << fullname << std::endl; 
 
-	std::string first1 = "Umar" ;
-	std::string last1("Lone") ;
+	// std::string first1 = "Umar" ;
+	// std::string last1("Lone") ;
 
-	std::string name{"Umar Lone"} ;
-	using namespace std::string_literals ;
-	auto n2 = "Umar Lone"s ;
+	// std::string name{"Umar Lone"} ;
+	// using namespace std::string_literals ;
+	// auto n2 = "Umar Lone"s ;
 
-	unsigned int value = 100u ;
-	return 0 ;
+	// unsigned int value = 100u ;
+	// return 0 ;
+
+	std::string f;
+	std::string l;
+
+	std::getline(std::cin,f);
+	std::getline(std::cin,l);
+std::string full = Combine(f,l);
+printf("%s",f.c_str());
+std::cout << full << std::endl;
+return 0;
 }
 
 void UsingStdString() {
