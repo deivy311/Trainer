@@ -43,3 +43,4 @@ target_include_directories(${SUB_PROJECT_NAME}
 # #linking Gstreamer library with target executable
 target_link_libraries(${SUB_PROJECT_NAME} 
         )
+
