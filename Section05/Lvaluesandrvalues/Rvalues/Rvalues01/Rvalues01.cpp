@@ -5,9 +5,10 @@ int Add(int x, int y) {
 	return x + y;
 }
 //Return l-value
-int & Transform(int &x) {
-	x *= x;
-	return x;
+int Transform(int &_x) {
+	_x *= _x;
+	int &tem=_x;
+	return _x;
 }
 
 void Print(int &x) {
@@ -27,14 +28,16 @@ int main() {
 	//ref is l-value reference
 	int &ref = x ;
 	//Transform returns an l-value
-	int &ref2 = Transform(x) ;
+	int &&ref2 = Transform(x) ;
+
+
 	//Binds to function that accepts l-value reference
 	Print(x);
 	
 
 	//rv is r-value reference
 	int &&rv = 8 ;
-	
+	// int &t= (x+8);
 	//Add returns a temporary (r-value)
 	int &&rv2 = Add(3,5) ;
 	//Binds to function that accepts a temporary, i.e. r-value reference

@@ -37,7 +37,7 @@ void Strings() {
 	std::cout << p << std::endl;
 	delete[]p;
 }
-void TwoD() {
+void TwoD() { // in heep
 	int *p1 = new int[3];
 	int *p2 = new int[3];
 

@@ -1,4 +1,4 @@
-#pragma once
+#pragma once  // head to guards prevent prevent the rehabilitation caused when includ one source file more than once.
 struct Car {
 private:
 	float fuel{ 0 };

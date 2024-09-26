@@ -5,7 +5,14 @@
             "name": "(gdb) Debug Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/bin/point_0", //Implemented new architecture
+            // "program": "${workspaceFolder}/build/Section02/Auto/Autokeyword/Autokeyword/Autokeyword", //Implemented new architecture
+            // "program": "${workspaceFolder}/build/Section02/Assignment3/Assignment3", //Implemented new architecture
+            // "program": "${workspaceFolder}/build/Section03/Memmgmtc/Memmgmtc/Memmgmtc",
+            // "program": "${workspaceFolder}/build/Section08/Assignment1_Sec8/Assignment1_Sec8",
+            "program": "${workspaceFolder}/build/Section05/Lvaluesandrvalues/Rvalues/Rvalues01/Rvalues01",
+            // "program": "${workspaceFolder}/build/Section08/Assignment2_Sec8/Assignment2_Sec8",
+            // "program": "${workspaceFolder}/build/Section08/Assignment3_Sec8/Assignment3_Sec8",
+            
             "args": [
                 "--d=16",
                 "--id=16",
@@ -14,7 +21,7 @@
                 "--v=/dev/video0"
             ],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/build/bin/",
+            "cwd": "${workspaceFolder}/build/",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
