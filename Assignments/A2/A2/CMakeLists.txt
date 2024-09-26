@@ -9,5 +9,5 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Add the executable
-add_executable(SimpleCppProgram main.cpp)
+add_executable(SimpleCppProgram2 main.cpp)
 
