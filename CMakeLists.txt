@@ -11,6 +11,9 @@ set(CMAKE_CXX_STANDARD 17) #setting C++ 14 standard
 
 add_subdirectory(Section02/Assignments/Assignment1)
 add_subdirectory(Section02/Assignments/Assignment2)
+add_subdirectory(Section02/Assignments/Assignment3-1)
+add_subdirectory(Section02/Assignments/Assignment3-2)
+add_subdirectory(Section02/Assignments/Assignment3-3)
 add_subdirectory(Section02/Auto/Autokeyword/Autokeyword)
 add_subdirectory(Section02/Functionpointers/Functionpointer/Functionpointer)
 add_subdirectory(Section02/Defaultfunctionargs/Defaultfunctionargs/Defaultfunctionargs)
