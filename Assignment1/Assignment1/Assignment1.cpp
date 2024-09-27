@@ -9,10 +9,10 @@ int main()
     int y = 10;
     int result;
 
-    // Call Add
+    // Call Add (with const int* signature)
     Add(&x, &y);
 
-    // Call AddVal
+    // Call AddVal (with const int* signature)
     AddVal(&x, &y, &result);
 
     // Call Swap
@@ -23,6 +23,7 @@ int main()
     // Call Factorial
     int num = 4;
     Factorial(&num, &result);
+    std::cout << "Factorial of: " << num << " is " << result << std::endl;
 
     return 0;
 }

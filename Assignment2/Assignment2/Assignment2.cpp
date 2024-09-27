@@ -18,6 +18,5 @@ int main() {
     // Call Factorial
     int num = 2;
     Factorial(num, result);
-
-    return 0;
+    std::cout << "Factorial of: " << num << " is " << result << std::endl;
 }

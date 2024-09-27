@@ -1,7 +1,7 @@
 #include <iostream>
 #include "math.h"
 // Defination
-int Add(int *a, int *b)
+int Add(const int *a, const int *b)
 { // Add two numbers and return the sum
 
     int sum = *a + *b;
@@ -10,7 +10,7 @@ int Add(int *a, int *b)
     return sum;
 }
 
-void AddVal(int *a, int *b, int *result) // Add two numbers and return the sum through the third pointer argument
+void AddVal(const int *a, const int *b, int *result) // Add two numbers and return the sum through the third pointer argument
 {
     *result = *a + *b;
     std::cout << "Result is: " << *result << std::endl;
@@ -22,16 +22,19 @@ void Swap(int *a, int *b)
     int temp = *a;
     *a = *b;
     *b = temp;
-    
 }
 
 void Factorial(int *a, int *result)
 { // Generate the factorial of a number and return that through the second pointer argument
 
-    *result = 1;
-    for (int i = 1; i <= *a; i++)
+    if (*a <= 1)
     {
-        *result = *result * i;
+        *result = 1;  // Base case: factorial of 0 or 1 is 1
     }
-     std::cout << "Factorial of: " << *a << " is " << *result << std::endl;
+    else
+    {
+        int temp = *a - 1;
+        Factorial(&temp, result);  // Recursive call
+        *result = *result * (*a);  // Multiply by current value of a
+    }
 }
