@@ -104,4 +104,6 @@ add_subdirectory(Section18/Parallel)
 # add_subdirectory(point_4)
 # add_subdirectory(point_5)
 # add_subdirectory(point_6)
-
+add_subdirectory(Assignments/Assignment1)
+add_subdirectory(Assignments/Assignment2)
+add_subdirectory(Assignments/Assignment3)
