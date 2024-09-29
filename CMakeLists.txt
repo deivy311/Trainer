@@ -105,6 +105,8 @@ add_subdirectory(Assignment4/Assignment4)
 add_subdirectory(Assignment5_1_Section08/Assignment5_1_Section08)
 add_subdirectory(Assignment5_2_Section08/Assignment5_2_Section08)
 add_subdirectory(Assignment5_3_Section08/Assignment5_3_Section08)
+add_subdirectory(Assignment6_1_Section09/Assignment6_1_Section09)
+
 # add_subdirectory(Section04/Class/Car/Carmain/)
 # add_subdirectory(point_1)
 # add_subdirectory(point_2_3)
