@@ -110,3 +110,8 @@ add_subdirectory(Assignment3/A3)
 # add_subdirectory(point_5)
 # add_subdirectory(point_6)
 
+##assigments
+add_subdirectory(Assignments/A1/A1)
+add_subdirectory(Assignments/A2/A2)
+add_subdirectory(Assignments/A3/A3)
+
