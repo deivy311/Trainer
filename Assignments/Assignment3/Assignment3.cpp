@@ -1,32 +1,54 @@
 #include <iostream>
 
 int main() {
-    // Initial variable declarations
+    // Part 1: References and Modifications
     int x = 5;
     const int MAX = 12;
 
-    // References
-    int &ref_x1 = x;          // A reference to a non-const int, this is modifiable.
-    const int &ref_x2 = x;    // A const reference, this cannot modify the value of x.
+    // Try to modify x1 & x2 and see the compilation output
+    int &ref_x1 = x;                // Valid - reference to a non-const int.
+    std::cout << "int &ref_x1 = x:" << &ref_x1 << std::endl;
 
-    ref_x1 = 10;              // Valid
-    // ref_x2 = 15;           // Invalid: Cannot modify x through ref_x2 because it's const.
+    const int &ref_x2 = x;          // Valid - reference to a const int.
 
-    // Pointers
-    const int *ptr1 = &x;     // ptr1 can point to another address, but the value *ptr1 cannot be changed.
-    int *const ptr2 = &x;     // ptr2 is a constant pointer to int, meaning the pointer itself cannot change, but *ptr2 can.
-    const int *const ptr3 = &x;  // ptr3 is a constant pointer to a constant int.
+    std::cout << "Initial value of x: " << x << std::endl;
 
-    // Modifying pointers and pointees
-    ptr1 = &MAX;              // Valid: ptr1 can point to another const int.
-    // *ptr1 = 20;            // Invalid: Cannot modify value pointed by ptr1.
+    // Valid: modifying through non-const reference (ref_x1)
+    ref_x1 = 10;
+    std::cout << "After modifying ref_x1 (Valid): " << x << std::endl;
 
-    *ptr2 = 20;               // Valid: Can modify the value of x through ptr2 because *ptr2 is not constant.
-    // ptr2 = &MAX;           // Invalid: Cannot change the pointer itself.
+    // Invalid: modifying through const reference (ref_x2) will cause an error if uncommented
+    // ref_x2 = 15; // Uncommenting this line will cause a compilation error
 
-    // Pointer references
-    const int *&p_ref1 = ptr1;   // p_ref1 is a reference to a pointer to const int.
-    int *const &p_ref2 = ptr2;   // p_ref2 is a reference to a constant pointer.
+    // Part 2: Pointers and Modifications
+    const int *ptr1 = &x;           // Valid - pointer to a const int.
+    int *const ptr2 = &x;           // Valid - constant pointer to a non-const int.
+    const int *const ptr3_1 = &x;   // Valid - constant pointer to a const int.
+    const int *ptr3_2 = &MAX;       // Valid - pointer to a const int.
+
+    // Valid: modifying the value pointed by ptr2 (pointee is not const)
+    *ptr2 = 20;
+    std::cout << "After modifying *ptr2 (Valid): " << *ptr2 << std::endl;
+
+    // Invalid: trying to modify the value pointed by ptr1 (pointee is const)
+    // *ptr1 = 25; // Uncommenting this line will cause a compilation error
+
+    // Invalid: ptr2 is a constant pointer, we cannot change where it points
+    // ptr2 = &MAX; // Uncommenting this line will cause a compilation error
+
+    // Part 3: References to Pointers
+    const int *&p_ref1 = ptr1;      // Valid - reference to a pointer to a const int.
+
+    // Invalid: ptr2 is a constant pointer, so we need to declare the reference accordingly
+    // const int*& p_ref2 = ptr2;   // Uncommenting this line will cause a compilation error
+    int *const &p_ref2 = ptr2;      // Valid - reference to a constant pointer to int.
+
+    // Final Output: print values to validate the declarations
+    std::cout << "ptr1 points to: " << *ptr1 << " (Valid)" << std::endl;
+    std::cout << "ptr2 points to: " << *ptr2 << " (Valid)" << std::endl;
+    std::cout << "ptr3_1 points to: " << *ptr3_1 << " (Valid)" << std::endl;
+    std::cout << "ptr3_2 points to: " << *ptr3_2 << " (Valid)" << std::endl;
 
     return 0;
 }
+

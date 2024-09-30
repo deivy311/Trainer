@@ -1,41 +1,24 @@
 #include <iostream>
-
-// Function to add two numbers and return the result through a reference parameter
-void Add(int a, int b, int &result) {
-    result = a + b;
-}
-
-// Function to calculate the factorial of a number and return the result through a reference parameter
-void Factorial(int a, int &result) {
-    result = 1;  
-    for (int i = 2; i <= a; ++i) {
-        result *= i;  
-    }
-}
-
-// Function to swap two numbers through reference arguments
-void Swap(int &a, int &b) {
-    int temp = a;  
-    a = b;         
-    b = temp;      
-}
+#include "math_operations.h"  // Include the custom math_operations header
 
 int main() {
-    int x = 5, y = 3, result = 0;
+    int result;
 
-    // Example for Add function
-    Add(x, y, result);
-    std::cout << "Add(" << x << ", " << y << ") = " << result << std::endl;
+    // Test Add function
+    int num1 = 8, num2 = 3;
+    Add(num1, num2, result);
+    std::cout << "Addition of " << num1 << " and " << num2 << " is: " << result << std::endl;
 
-    // Example for Factorial function
-    int num = 4;
+    // Test Factorial function
+    int num = 5;
     Factorial(num, result);
-    std::cout << "Factorial(" << num << ") = " << result << std::endl;
+    std::cout << "Factorial of " << num << " is: " << result << std::endl;
 
-    // Example for Swap function
-    std::cout << "Before Swap: x = " << x << ", y = " << y << std::endl;
-    Swap(x, y);
-    std::cout << "After Swap: x = " << x << ", y = " << y << std::endl;
+    // Test Swap function
+    int a = 15, b = 20;
+    std::cout << "Before Swap: a = " << a << ", b = " << b << std::endl;
+    Swap(a, b);
+    std::cout << "After Swap: a = " << a << ", b = " << b << std::endl;
 
     return 0;
 }
