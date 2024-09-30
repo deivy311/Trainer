@@ -1,62 +1,14 @@
 {
     "version": "0.2.0",
     "configurations": [
-        {
-            "name": "(gdb) Launch",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/Assigments/ASG7/ASG7-account_error_handling",
-            "args": [],
-            "stopAtEntry": false,
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description": "Set Disassembly Flavor to Intel",
-                    "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
-                }
-            ]
-        },
-        {
-            "name": "(gdb) Launch",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/Assigments/ASG7/ASG7-account_error_handling",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description": "Set Disassembly Flavor to Intel",
-                    "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
-                }
-            ]
-        },
+        
+
 
         {
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/Assigments/ASG7/ASG7-account_error_handling",
+            "program": "${workspaceFolder}/build/Section09/Account/AccountMain/AccountMain",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -80,7 +32,7 @@
             "name": "(gdb) Debug Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program":"${workspaceFolder}/build/Assigments/ASG7/ASG7-account_error_handling", //Implemented new architecture
+            "program":"${workspaceFolder}/build/Section09/Account/AccountMain/AccountMain", //Implemented new architecture
             //"program": "${workspaceFolder}/build/Section02/Pointers/Pointers/Pointers/Pointers", //Implemented new architecture
             "args": [
                 "--d=16",
