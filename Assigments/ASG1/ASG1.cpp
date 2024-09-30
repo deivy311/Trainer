@@ -1,36 +1,9 @@
 #include <iostream>
-
-// Implement the following functions using ((pointer)) arguments only
-
-
-// Function to add two integers and return the sum
-int Add(int *a, int *b) {
-    return *a + *b;
-}
-
-// Function to add two integers and store the result in a third pointer
-void AddVal(int *a, int *b, int *result) {
-    *result = *a + *b;
-}
-
-// Function to swap the values of two integers
-void Swap(int *a, int *b) {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
-
-// Function to calculate the factorial of a number and store the result
-void Factorial(int *a, int *result) {
-    *result = 1;
-    for (int i = 1; i <= *a; ++i) {
-        *result *= i;
-    }
-}
+#include "functions.h"
 
 int main() {
-    int x = 1, y = 2;
-    int sum = 0, fact = 0;
+    int x = 5, y = 3;
+    int sum = 0, factLoop = 0, factRecursive = 0;
 
     // Using Add function
     std::cout << "Summation of " << x << " and " << y << " is: " << Add(&x, &y) << std::endl;
@@ -44,9 +17,13 @@ int main() {
     Swap(&x, &y);
     std::cout << "After Swap: x = " << x << ", y = " << y << std::endl;
 
-    // Using Factorial function
-    Factorial(&x, &fact);
-    std::cout << "Factorial of " << x << " is: " << fact << std::endl;
+    // Using FactorialLoop function
+    FactorialLoop(&x, &factLoop);
+    std::cout << "Factorial of " << x << " using loop is: " << factLoop << std::endl;
+
+    // Using FactorialRecursive function
+    FactorialRecursive(&x, &factRecursive);
+    std::cout << "Factorial of " << x << " using recursion is: " << factRecursive << std::endl;
 
     return 0;
 }

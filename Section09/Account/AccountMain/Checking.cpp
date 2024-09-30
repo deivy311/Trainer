@@ -1,6 +1,8 @@
 #include "Checking.h"
-
 #include <iostream>
+
+
+
 Checking::Checking(const std::string &name, float balance, float minbalance):
 m_MinimumBalance(minbalance), Account(name, balance){
 }

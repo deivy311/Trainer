@@ -1,6 +1,8 @@
 #include "Transaction.h"
 #include <iostream>
 #include "Checking.h"
+
+
 void Transact(Account * pAccount) {
 	std::cout << "Transaction started" << std::endl; 
 	std::cout << "Initial balance:" << pAccount->GetBalance() << std::endl;
