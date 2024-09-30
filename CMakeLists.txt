@@ -98,6 +98,11 @@ add_subdirectory(Section18/Variant)
 add_subdirectory(Section18/Any)
 add_subdirectory(Section18/Optional)
 add_subdirectory(Section18/Parallel)
+add_subdirectory(Assignment1/A1)
+add_subdirectory(Assignment2/A2)
+add_subdirectory(Assignment3/A3)
+
+
 # add_subdirectory(Section04/Class/Car/Carmain/)
 # add_subdirectory(point_1)
 # add_subdirectory(point_2_3)
