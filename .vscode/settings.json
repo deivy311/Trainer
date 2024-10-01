@@ -83,5 +83,6 @@
         "numbers": "cpp",
         "cinttypes": "cpp",
         "typeindex": "cpp"
-    }
+    },
+    "DockerRun.DisableAutoGenerateConfig": true
 }

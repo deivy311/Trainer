@@ -18,5 +18,6 @@ int main() {
 
 	//Deduced to a pointer. * is not necessary
 	auto *ptr = &x;
+	std::cout <<"hallo" << std::endl;
 	return 0;
 }

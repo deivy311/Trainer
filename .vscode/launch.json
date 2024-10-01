@@ -5,7 +5,7 @@
             "name": "(gdb) Debug Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/Section02/Pointers/Pointers/Pointers/Pointers", //Implemented new architecture
+            "program": "${workspaceFolder}/build/Assignment/Assignment1/Assignment1", //Implemented new architecture
             "args": [
                 "--d=16",
                 "--id=16",
