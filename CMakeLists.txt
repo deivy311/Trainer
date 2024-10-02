@@ -107,3 +107,6 @@ set(CMAKE_CXX_STANDARD 17) #setting C++ 14 standard
 add_subdirectory(Assignments/Assignment1)
 add_subdirectory(Assignments/Assignment2)
 add_subdirectory(Assignments/Assignment3)
+add_subdirectory(Assignments/Assignment4)
+add_subdirectory(Assignments/Assignment5)
+
