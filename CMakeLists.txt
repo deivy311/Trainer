@@ -103,6 +103,7 @@ add_subdirectory(Assignment/A2)
 add_subdirectory(Assignment/A3)
 add_subdirectory(Assignment/A6_1)
 add_subdirectory(Assignment/A6_2)
+add_subdirectory(Assignment/A6_3)
 
 # add_subdirectory(Section04/Class/Car/Carmain/)
 # add_subdirectory(point_1)
