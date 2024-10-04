@@ -5,7 +5,7 @@
             "name": "(gdb) Debug Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/Assignments/A1/A1/SimpleCppProgram1", //Implemented new architecture
+            "program": "${workspaceFolder}/build/Assignments/A6_1/A6_1", //Implemented new architecture
             // "program": "${workspaceFolder}/build/Assignments/A1/A1/SimpleCppProgram1", //Implemented new architecture
             // "program": "${workspaceFolder}/build/Assignments/A1/A1/SimpleCppProgram1", //Implemented new architecture
             "args": [
