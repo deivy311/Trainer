@@ -65,6 +65,7 @@ add_subdirectory(Section10/Exceptionhandling-noexcept/Exceptionhandling-noexcept
 add_subdirectory(Section11/Errorhandling/Fileio/Fileio)
 add_subdirectory(Section11/Binaryfiles/Fileio-binaryfiles/Fileio-binaryfiles)
 add_subdirectory(Section11/Assignments/Section11_Assignment1)
+add_subdirectory(Section11/Assignments/Section11_Assignment2)
 add_subdirectory(Section12/Typetraits)
 add_subdirectory(Section12/Staticassert)
 add_subdirectory(Section12/Perfectforwarding-ii/Perfectforwarding/Perfectforwarding)
