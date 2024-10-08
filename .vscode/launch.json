@@ -5,7 +5,7 @@
             "name": "(gdb) Debug Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/Section12/Assignments/Section12_Assignment3/Section12_Assignment3", //Implemented new architecture
+            "program": "${workspaceFolder}/build/Section12/Assignments/Section12_Assignment4/Section12_Assignment4", //Implemented new architecture
             "args": [
                 //"/home/adasi/development/C++_Course/CPP_Course/Trainer/Section11/Assignments/Section11_Assignment2", 
                 //"/home/adasi/development/C++_Course/CPP_Course/Trainer/Section11/Assignments/Copied_folder",
