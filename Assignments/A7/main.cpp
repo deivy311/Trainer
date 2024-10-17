@@ -5,11 +5,11 @@
 #include <typeinfo>
 int main()
 {
-	Checking ch("Latifa", 100, -50);
+	Checking ch("Latifa", 1000,50);
 	
 	Transact(&ch);
-    ch.Deposit(-50); 
-	ch.Withdraw(10);  
+    //ch.Deposit(-100); 
+	ch.Withdraw(-10);  
     return 0;
 }
  
