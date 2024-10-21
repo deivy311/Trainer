@@ -110,6 +110,7 @@ add_subdirectory(Assignment6_2_Section09/Assignment6_2_Section09)
 add_subdirectory(Assignment7_1_Section11/Assignment7_1_Section11)
 add_subdirectory(Assignment8_1_Section12/Assignment8_1_Section12)
 add_subdirectory(Assignment8_3_Section12/Assignment8_3_Section12)
+add_subdirectory(Assignment8_4_Section12/Assignment8_4_Section12)
 
 # add_subdirectory(Section04/Class/Car/Carmain/)
 # add_subdirectory(point_1)
