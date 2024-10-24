@@ -12,10 +12,7 @@
                 "${workspaceFolder}/build",
                 "-DCMAKE_BUILD_TYPE=Debug"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "problemMatcher": [],
             "detail": "CMake configuration task"
         },
@@ -31,10 +28,7 @@
                 "-DCMAKE_BUILD_TYPE=Debug",
                 "-DOpenCV_DIR=/home/colibri/Repos/colibri/colibri/dependencies/opencv/build3"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "problemMatcher": [],
             "detail": "CMake configuration task"
         },
@@ -50,10 +44,7 @@
                 "-DCMAKE_BUILD_TYPE=Debug",
                 "-DOpenCV_DIR=${workspaceFolder}/colibri/dependencies/opencv/build3"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "problemMatcher": [],
             "detail": "CMake configuration task"
         },
@@ -69,13 +60,8 @@
                 "--target",
                 "all",
                 "--"
-                // "-j",
-                // "4"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "problemMatcher": [],
             "detail": "CMake build task"
         },
@@ -94,10 +80,7 @@
                 "-j",
                 "4"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "problemMatcher": [],
             "detail": "CMake release task"
         },
@@ -115,10 +98,7 @@
                 "-j",
                 "10"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "problemMatcher": [],
             "detail": "CMake build task"
         },
@@ -136,10 +116,7 @@
                 "-j",
                 "10"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "problemMatcher": [],
             "detail": "CMake release task"
         },
@@ -154,7 +131,10 @@
             "group": "none",
             "problemMatcher": {
                 "owner": "cpp",
-                "fileLocation": ["relative", "${workspaceFolder}"],
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}"
+                ],
                 "pattern": {
                     "regexp": "^(.+):(\\d+):\\s*(\\d+)?\\s*(\\[.+\\])?\\s*(.+)$",
                     "file": 1,
@@ -168,41 +148,41 @@
         {
             "label": "buildWithLint",
             "type": "shell",
-            "dependsOn": ["cpplint", "CMake: linuxBuild"],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "dependsOn": [
+                "cpplint",
+                "CMake: linuxBuild"
+            ],
+            "group": "build",
             "problemMatcher": []
         },
         {
             "label": "buildWithLintRelease",
             "type": "shell",
-            "dependsOn": ["cpplint", "CMake: linuxRelease"],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "dependsOn": [
+                "cpplint",
+                "CMake: linuxRelease"
+            ],
+            "group": "build",
             "problemMatcher": []
         },
         {
             "label": "buildWithLintWindows",
             "type": "shell",
-            "dependsOn": ["cpplint", "CMake: windowsBuild"],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "dependsOn": [
+                "cpplint",
+                "CMake: windowsBuild"
+            ],
+            "group": "build",
             "problemMatcher": []
         },
         {
             "label": "buildWithLintWindowsRelease",
             "type": "shell",
-            "dependsOn": ["cpplint", "CMake: windowsRelease"],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "dependsOn": [
+                "cpplint",
+                "CMake: windowsRelease"
+            ],
+            "group": "build",
             "problemMatcher": []
         },
         {
@@ -225,51 +205,76 @@
         {
             "label": "buildWithDocs",
             "type": "shell",
-            "dependsOn": ["CMake: linuxBuild"],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "dependsOn": [
+                "CMake: linuxBuild"
+            ],
+            "group": "build",
             "problemMatcher": []
-        },        {
+        },
+        {
             "label": "GenerateDocs",
             "type": "shell",
-            "dependsOn": ["generateDocs"],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "dependsOn": [
+                "generateDocs"
+            ],
+            "group": "build",
             "problemMatcher": []
         },
         {
             "label": "buildWithDocsAndLintRelease",
             "type": "shell",
-            "dependsOn": ["cpplint", "CMake: linuxRelease", "generateDocs"],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "dependsOn": [
+                "cpplint",
+                "CMake: linuxRelease",
+                "generateDocs"
+            ],
+            "group": "build",
             "problemMatcher": []
         },
         {
             "label": "buildWithDocsAndLintWindows",
             "type": "shell",
-            "dependsOn": ["cpplint", "CMake: windowsBuild", "generateDocs"],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "dependsOn": [
+                "cpplint",
+                "CMake: windowsBuild",
+                "generateDocs"
+            ],
+            "group": "build",
             "problemMatcher": []
         },
         {
             "label": "buildWithDocsAndLintWindowsRelease",
             "type": "shell",
-            "dependsOn": ["cpplint", "CMake: windowsRelease", "generateDocs"],
+            "dependsOn": [
+                "cpplint",
+                "CMake: windowsRelease",
+                "generateDocs"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc build active file",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": []
+            "detail": "Task generated by Debugger."
         }
     ]
 }

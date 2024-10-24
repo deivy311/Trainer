@@ -1,31 +1,22 @@
 #include <iostream>
-#include "functions.hpp"  // Include the header file
+#include "MathFunctions.hpp"
 
 int main() {
-    // Test the FindAll function
-    std::string target = "Hello, hello, HELLO!";
-    std::string search_string = "hello";
+    int arr[] = {1, 2, 3, 4, 5};
+    size_t arrSize = sizeof(arr) / sizeof(arr[0]);
 
-    // Case-insensitive search
-    std::vector<int> indices = FindAll(target, search_string, Case::INSENSITIVE);
-    std::cout << "Case-insensitive search results: ";
-    for (int index : indices) {
-        std::cout << index << " ";
-    }
-    std::cout << std::endl;
+    // Using MathOperations class
+    std::cout << "Sum of two numbers: " << MathOperations::Add(5, 10) << std::endl;
 
-    // Case-sensitive search
-    indices = FindAll(target, search_string, Case::SENSITIVE);
-    std::cout << "Case-sensitive search results: ";
-    for (int index : indices) {
-        std::cout << index << " ";
-    }
-    std::cout << std::endl;
+    // Using ArrayOperations class
+    std::cout << "Sum of array elements: " << ArrayOperations::ArraySum(arr, arrSize) << std::endl;
+    std::cout << "Max element in array: " << ArrayOperations::Max(arr, arrSize) << std::endl;
 
-    // Test the recursive factorial function
-    int number = 5;
-    int fact = Factorial(number);
-    std::cout << "Factorial of " << number << " is: " << fact << std::endl;
+    auto minMax = ArrayOperations::MinMax(arr, arrSize);
+    std::cout << "Min element: " << minMax.first << ", Max element: " << minMax.second << std::endl;
+
+    // Using FactorialOperations class
+    std::cout << "Factorial of 5: " << FactorialOperations::Factorial(5) << std::endl;
 
     return 0;
 }
