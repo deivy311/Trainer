@@ -1,5 +1,6 @@
 #pragma once
 #include "Account.h"
+
 class Checking :
 	public Account {
 	float m_MinimumBalance;
@@ -10,4 +11,5 @@ public:
 	void Withdraw(float amount)override;
 	float GetMinimumBalance()const;
 };
+
 

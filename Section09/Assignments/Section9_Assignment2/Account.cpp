@@ -13,6 +13,7 @@ Account::Account(const std::string &name, float balance) : m_Name(name), m_Balan
 
 Account::~Account() {
 	//std::cout << "~Account()" << std::endl;
+	
 }
 
 const std::string Account::GetName() const {

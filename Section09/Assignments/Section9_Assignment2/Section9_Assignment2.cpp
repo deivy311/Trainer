@@ -8,7 +8,7 @@ int main() {
     try {
         // Create a Checking account with a balance of 100
         Checking ch("Bob", 100);
-
+            
         // Perform a transaction on the Checking account
         Transact(&ch);
 
