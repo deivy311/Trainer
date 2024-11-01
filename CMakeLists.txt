@@ -109,4 +109,12 @@ add_subdirectory(Assignments/Assignment2)
 add_subdirectory(Assignments/Assignment3)
 add_subdirectory(Assignments/Assignment4)
 add_subdirectory(Assignments/Assignment5)
+add_subdirectory(Assignments/Assignment6)
+add_subdirectory(Assignments/Assignment11)
+add_subdirectory(Assignments/Assignment12)
+add_subdirectory(Assignments/Assignment13)
+add_subdirectory(Assignments/Assignment14)
+add_subdirectory(Assignments/Assignment16)
+
+
 
