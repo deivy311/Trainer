@@ -1,26 +1,27 @@
+#include "GeneralTemplates.hpp"
 #include <iostream>
-#include "StringSpecializations.hpp"
+#include <string>
 
 int main() {
-    // Array of C-strings (const char*)
-    const char* cStringArr[] = {"apple", "orange", "banana", "grape"};
-    size_t cStringArrSize = sizeof(cStringArr) / sizeof(cStringArr[0]);
+    // Example using std::string array
+    std::string strArr[] = {"apple", "orange", "banana"};
+    size_t strArrSize = sizeof(strArr) / sizeof(strArr[0]);
 
-    std::cout << "Sum of lengths of C-string array elements: " << ArraySum(cStringArr, cStringArrSize) << std::endl;
-    std::cout << "Max element in C-string array: " << Max(cStringArr, cStringArrSize) << std::endl;
+    std::cout << "String Array Sum: " << ArraySum(strArr) << std::endl;
+    std::cout << "Max String: " << Max(strArr) << std::endl;
 
-    auto minMaxCString = MinMax(cStringArr, cStringArrSize);
-    std::cout << "Min element: " << minMaxCString.first << ", Max element: " << minMaxCString.second << std::endl;
+    auto [minStr, maxStr] = MinMax(strArr);
+    std::cout << "Min String: " << minStr << ", Max String: " << maxStr << std::endl;
 
-    // Array of std::string
-    std::string stringArr[] = {"cat", "dog", "elephant", "bear"};
-    size_t stringArrSize = sizeof(stringArr) / sizeof(stringArr[0]);
+    // Example using char* array (C-strings)
+    char* cstrArr[] = {"apple", "orange", "banana"};
+    size_t cstrArrSize = sizeof(cstrArr) / sizeof(cstrArr[0]);
 
-    std::cout << "Sum of lengths of std::string array elements: " << ArraySum(stringArr, stringArrSize) << std::endl;
-    std::cout << "Max element in std::string array: " << Max(stringArr, stringArrSize) << std::endl;
+    std::cout << "C-String Array Sum: " << ArraySum(cstrArr) << std::endl;
+    std::cout << "Max C-String: " << Max(cstrArr) << std::endl;
 
-    auto minMaxString = MinMax(stringArr, stringArrSize);
-    std::cout << "Min element: " << minMaxString.first << ", Max element: " << minMaxString.second << std::endl;
+    auto [minCStr, maxCStr] = MinMax(cstrArr);
+    std::cout << "Min C-String: " << minCStr << ", Max C-String: " << maxCStr << std::endl;
 
     return 0;
 }
