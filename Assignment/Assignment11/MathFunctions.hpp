@@ -36,6 +36,6 @@ public:
     static T Factorial(T n);
 };
 
-#include "MathFunctions.cpp"  // Include the implementation
+// #include "MathFunctions.cpp"  // Include the implementation
 
 #endif // MATH_FUNCTIONS_HPP
