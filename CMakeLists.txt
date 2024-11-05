@@ -113,6 +113,8 @@ add_subdirectory(Assignment8_3_Section12/Assignment8_3_Section12)
 add_subdirectory(Assignment8_4_Section12/Assignment8_4_Section12)
 add_subdirectory(Assignment8_5_Section12/Assignment8_5_Section12)
 add_subdirectory(Assignment9_Section13/Assignment9_Section13)
+add_subdirectory(STL_Project_Section15/STL_Project_Section15)
+
 # add_subdirectory(Section04/Class/Car/Carmain/)
 # add_subdirectory(point_1)
 # add_subdirectory(point_2_3)
