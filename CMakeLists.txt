@@ -115,6 +115,8 @@ add_subdirectory(Assignments/Assignment12)
 add_subdirectory(Assignments/Assignment13)
 add_subdirectory(Assignments/Assignment14)
 add_subdirectory(Assignments/Assignment16)
+add_subdirectory(Assignments/Assignment17)
+add_subdirectory(Assignments/Assignment18)
 
 
 
