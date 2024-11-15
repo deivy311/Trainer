@@ -13,8 +13,8 @@ int main() {
     auto [minStr, maxStr] = MinMax(strArr);
     std::cout << "Min String: " << minStr << ", Max String: " << maxStr << std::endl;
 
-    // Example using char* array (C-strings)
-    char* cstrArr[] = {"apple", "orange", "banana"};
+    // Example using const char* array (C-strings)
+    const char* cstrArr[] = {"apple", "orange", "banana"};
     size_t cstrArrSize = sizeof(cstrArr) / sizeof(cstrArr[0]);
 
     std::cout << "C-String Array Sum: " << ArraySum(cstrArr) << std::endl;
