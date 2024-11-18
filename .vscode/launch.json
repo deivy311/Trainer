@@ -126,7 +126,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/Assigments/Section13_lamdba_and_funObj/main",
+            "program": "${workspaceFolder}/build/Assigments/Section15_STL_project/main",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -151,7 +151,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/Assigments/Section13_lamdba_and_funObj/main",
+            "program": "${workspaceFolder}/build/Assigments/Section15_STL_project/main",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -175,7 +175,7 @@
             "name": "(gdb) Debug Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program":"${workspaceFolder}/Assigments/Section13_lamdba_and_funObj/main", //Implemented new architecture
+            "program":"${workspaceFolder}/Assigments/Section15_STL_project/main", //Implemented new architecture
             //"program": "${workspaceFolder}/build/Section02/Pointers/Pointers/Pointers/Pointers", //Implemented new architecture
             "args": [
                 "--d=16",
